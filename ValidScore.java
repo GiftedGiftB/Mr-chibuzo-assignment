@@ -11,7 +11,7 @@ public class ValidScore{
 	int grade4 = 0;
 	int grade5 = 0;
 	
-	while(validCounter < 5){
+	while(validCounter < 10){
 	System.out.print("Enter a number between 0 - 100: ");
 	int userNumber = scan.nextInt();
 
