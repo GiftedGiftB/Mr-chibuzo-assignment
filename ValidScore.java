@@ -5,8 +5,6 @@ public class ValidScore{
 	
 	int validCounter = 0;
 	int invalidCounter = 0;
-	int switchCounter = 0;
-	int userNumber = 0;
 	int grade1 = 0;
 	int grade2 = 0;
 	int grade3 = 0;
@@ -15,18 +13,18 @@ public class ValidScore{
 	
 	while(validCounter < 10){
 	System.out.print("Enter a number between 0 - 100: ");
-	userNumber = scan.nextInt();
+	int userNumber = scan.nextInt();
 
-	if(userNumber < 0 && userNumber > 100){
+	if(userNumber < 0 || userNumber > 100){
 	System.out.println("Invalid number");
 	invalidCounter++;
 	continue;
 	}
         validCounter++;
 	  switch(userNumber / 10){
-		case 8:
-		case 9:
 		case 10:
+		case 9:
+		case 8:
 			System.out.println("A");
 		grade1++;
 		break;
@@ -51,23 +49,22 @@ public class ValidScore{
 		case 2:
 		case 1:
 		case 0:
-			System.out.println("F");
-		grade5++;
-		break;
-		
+			
 		default:
-			System.out.print("invalid input");
-		break;
+			System.out.println("F");
+			grade5++;
+			break;
 	}
+
  	}
 	
-		System.out.printf("Total number of student grades %d%n", grade1);
-		System.out.println("Total number of student grades"+ grade2);
-		System.out.println("Total number of student grades"+ grade3);
-		System.out.println("Total number of student grades "+ grade4);
-		System.out.println("Total number of student grades "+ grade5);
+		System.out.println("Number of student grades:  " +grade1);
+		System.out.println("Number of student grades:  " +grade2);
+		System.out.println("Number of student grades:  " +grade3);
+		System.out.println("Number of student grades:  " +grade4);
+		System.out.println("Number of student grades:  " +grade5);
 
-		System.out.printf("Invalid number: %d%n",invalidCounter);
+		System.out.printf("Invalid number is %d%n:",invalidCounter);
 
 }
 }
