@@ -4,7 +4,7 @@ public class NokiaAppDisplay{
 	Scanner scan = new Scanner(System.in);
 
 	System.out.println("""
-		NOKIA MENU
+		NOKIA 3310 MENU
 """);
 	System.out.print("""
 	   Welcome to NOKIA MENU
