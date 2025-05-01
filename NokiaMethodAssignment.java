@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class NokiaMethodAssignment{
 	public static void main(String[] args){
 	menu();
-
 	}
+
 	public static void menu(){
 	Scanner scan = new Scanner(System.in);
 	System.out.println("""
@@ -36,7 +36,7 @@ public class NokiaMethodAssignment{
 	1.Search
 	2.Service Nos
 	3.Add name
-	4.Erase
+	4.Erase  
 	5.Edit
 	6.Assign tone
 	7.Send b'card
@@ -49,15 +49,13 @@ public class NokiaMethodAssignment{
 	  switch(options){
 	case 8: 
 	System.out.print("""
-		options
+	    Options
 	1. Type of view
 	2. Memory status
+	0.Back to menu
+
 """);
-	
-	case 0:
-	menu();
-	break;
-	
+
 }
  break;
 	case 2:
@@ -119,7 +117,7 @@ break;
 		Empty
  
 """);
-break
+break;
 	case 4:
 	System.out.print("""
 	    Call register
@@ -299,6 +297,7 @@ break;
 	case 0:
 	menu();
 	break;
+	
    }
  }
 }
