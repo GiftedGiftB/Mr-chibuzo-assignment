@@ -15,12 +15,14 @@ public class SundayMunchies{
 	
 	// number 5  
 
+
+
 	//number 6
 
-	//System.out.print("Enter a number: ");
-	//int integerNumber = input.nextInt();
+	System.out.print("Enter a number: ");
+	int integerNumber = input.nextInt();
 
-	//System.out.print(Function.computeSumOfNumber(userNumber));
+	System.out.print(Function.computeSumOfNumber(userNumber));
 
 
 	// number 7
