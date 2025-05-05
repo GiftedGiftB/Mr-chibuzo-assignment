@@ -5,10 +5,10 @@ public class SundayMunchies{
 
 	// number 1
 
-	/** System.out.print("Enter a number: ");
+	 System.out.print("Enter a number: ");
 	int integer = input.nextInt();
 
-	System.out.print(Function.findMultiple(integer)); **/
+	System.out.print(Function.findMultiple(integer));
 
  	// number 2
 
