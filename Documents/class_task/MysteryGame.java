@@ -17,10 +17,10 @@ public class MysteryGame{
 	break;
 	}
 	else if(userGuess < randomGuess){
-	System.out.println("Too high");
+	System.out.println("Too low");
 	}
 	else if(userGuess > randomGuess){
-	System.out.println("Too low");
+	System.out.println("Too high");
     }
   }
 }
